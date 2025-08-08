@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>CornerCafe | About</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <input type="checkbox" id="menu-toggle" hidden>
+    <nav>
+        <h1 id="brandName">Corner Café</h1>
+        <div id="tabs">
+            <a class="large-screens-nav-items" href="index.html" hx-trigger="click" hx-target="body" hx-get="index.html" hx-push-url="index.html">Home</a>
+            <a class="large-screens-nav-items" href="about.html" hx-trigger="click" hx-target="body" hx-get="about.html" hx-push-url="about.html">About</a>
+            <a class="large-screens-nav-items" href="contact.html" hx-trigger="click" hx-target="body" hx-get="contact.html" hx-push-url="contact.html">Contact</a>
+            <label for="menu-toggle" class="menu-icon-label small-screens-nav-items">
+            <svg class="menu-icon small-screens-nav-items" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="#522a1e" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+            </svg>
+            </label>
+        </div>
+    </nav>
+
+    <div class="menu">
+        <a href="index.html" hx-trigger="click" hx-target="body" hx-get="index.html" hx-push-url="index.html"><h3 class="home">Home</h3></a>
+        <a href="about.html" hx-trigger="click" hx-target="body" hx-get="about.html" hx-push-url="about.html"><h3 class="about">About</h3></a>
+        <a href="contact.html" hx-trigger="click" hx-target="body" hx-get="contact.html" hx-push-url="contact.html"><h3 class="contact">Contact</h3></a>
+        </div>
+
+    <div id="sheet-container">
+        <h1 class="title">Corner Café</h1>
+        <p id="about-speech">
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nihil natus, repellendus 
+            facere nisi inventore explicabo sequi quod 
+            asperiores aliquam ea mollitia. Ducimus 
+            exercitationem quas ex, molestiae facere 
+            qui tenetur nostrum?
+            Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nihil natus, repellendus 
+            facere nisi inventore explicabo sequi quod 
+            asperiores aliquam ea mollitia. Ducimus 
+            exercitationem quas ex, molestiae facere 
+            qui tenetur nostrum?
+        </p>
+    </div>
+
+    <style>
+        body{
+        height: 100vh;
+        background-image: url('images/aboutUs_Background.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        }
+        
+    </style>
+
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <script src="js/script.js"></script>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
