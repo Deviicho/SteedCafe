@@ -11,16 +11,27 @@
     /* Accent (Coffee Brown) */
     --brown: rgba(141, 85, 36, 0.685);
 
-    /* Highlight (Amber Cream) */
-    --reddyBrown: hsl(16, 100%, 32%);
-
     /* Background (Light Beige) */
-    --background: hsl(41, 100%, 81%);
+    --background: hsl(65, 33%, 30%);
 
     /* Button Text / Headings */
     --text-dark: rgb(60, 35, 25);
 
+    --dark-accent: #2E2E2E; 
+
+    --text-beige: #E2D6B3;
+
+    --light-accent: #C4C7AA;  
+
 }
+
+:root {
+  --primary-green: #636734;   /* Background Circle */
+  --text-beige: #E2D6B3;      /* Horse + Text */
+  --dark-accent: #2E2E2E;     /* Shadow/Depth */
+  --light-accent: #C4C7AA;    /* Soft Highlight */
+}
+
 
 
 * {
@@ -160,9 +171,10 @@ nav{
     animation: icon-up 1s ease-in 0s 1;
 }
 #logo{
-    height: 15rem;
+    height: 12rem;
     animation: fade 1s ease-in 0s 1;
     opacity: 100%;
+    margin-top: 0.5rem;
 }
 
 @keyframes icon-up{
@@ -192,7 +204,7 @@ nav{
 
 #important-information-section{
     position: absolute;
-    top: 389px;
+    top: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,13 +215,13 @@ nav{
 }
 .box{
     background-color: white;
-    height: 284px;
-    width: 484px;
+    height: 289px;
+    width: 474px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.466);
     display: flex;
     flex-direction: column;
-    background-color: hsl(41, 91%, 79%);
+    background-color: hsla(41, 91%, 79%, 0.767);
 }
 .box-top-bar{
     display: flex;
@@ -231,6 +243,8 @@ nav{
 }
 .box-bottom img{
     height: 240px;
+    position: relative;
+    right: 1px;
 }
 #sheet-container{
     position: absolute;
@@ -295,7 +309,7 @@ nav{
 #spans-container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     
 }
 #info-container span{
@@ -336,6 +350,7 @@ nav{
     .small-screens-nav-items{display:block;}
     #logo{height: 13rem;}
     #sentence{font-size: 3rem;}
+    #sentence{margin-top: 1rem;}
     #important-information-section{flex-direction: column;}
     #sheet-container{min-width: 90%;}
     #mail-visual{
@@ -355,16 +370,17 @@ nav{
 }
 @media (max-width : 608px) {
     #sentence{font-size: 2.5rem;}
+    #sentence{margin-top: 1rem;}
     #brandName{font-size: 1.5rem;}
     
 
 }
 @media (max-width : 506px) {
     #sentence{font-size: 2rem;}
-    #logo{height: 10rem;}
+    #logo{height: 10rem; margin-top: 1rem;}
     .box{
     height: 180px;
-    width: 380px;
+    width: 375px;
     }
     .box-top-bar{
         margin-bottom: 5px;
@@ -390,14 +406,14 @@ nav{
 @media (max-width : 417px) {
     #sentence{font-size: 1.6rem;}
     #logo{height: 8rem;}
-    #sentence-section{top: 200px;}
+    #sentence-section{top: 220px;}
     @keyframes up{
         0%{top: 220px; opacity: 0%;};
         100%{top: 200px; opacity: 100%;};
     }
     .box{
     height: 120px;
-    width: 320px;
+    width: 318px;
     }
     .box-top-bar{
         margin-bottom: 3px;
